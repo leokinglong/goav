@@ -10,8 +10,8 @@ import (
 	"time"
 	"unsafe"
 
-	"mixstream/utils/ffmpeg/avcodec"
-	"mixstream/utils/ffmpeg/avutil"
+	"avcodec"
+	"avutil"
 )
 
 const (

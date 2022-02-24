@@ -15,7 +15,7 @@ package avfilter
 */
 import "C"
 import (
-	"mixstream/utils/ffmpeg/avcodec"
+	"avcodec"
 	"unsafe"
 )
 

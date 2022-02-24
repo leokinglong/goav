@@ -3,8 +3,9 @@ package avformat_test
 import (
 	"testing"
 
+	"avformat"
+
 	"github.com/stretchr/testify/assert"
-	"mixstream/utils/ffmpeg/avformat"
 )
 
 func TestAvUrlSplitWithSufficientSizes(t *testing.T) {

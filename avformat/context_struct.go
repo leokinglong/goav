@@ -10,7 +10,7 @@ import (
 	"reflect"
 	"unsafe"
 
-	"mixstream/utils/ffmpeg/avutil"
+	"avutil"
 )
 
 func (ctxt *Context) Chapters() **AvChapter {

@@ -19,7 +19,7 @@ import (
 	"reflect"
 	"unsafe"
 
-	"mixstream/utils/ffmpeg/avcodec"
+	"avcodec"
 )
 
 func (cctxt *CodecContext) Type() MediaType {

@@ -9,8 +9,8 @@ import "C"
 import (
 	"unsafe"
 
-	"mixstream/utils/ffmpeg/avcodec"
-	"mixstream/utils/ffmpeg/avutil"
+	"avcodec"
+	"avutil"
 )
 
 func (avs *Stream) CodecParameters() *avcodec.AvCodecParameters {

@@ -6,7 +6,7 @@ package avformat
 //#cgo pkg-config: libavutil
 //#include <libavutil/avutil.h>
 import "C"
-import "mixstream/utils/ffmpeg/avcodec"
+import "avcodec"
 
 func newRational(r C.struct_AVRational) avcodec.Rational {
 	return avcodec.NewRational(int(r.num), int(r.den))
