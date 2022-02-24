@@ -19,9 +19,10 @@ package avformat
 //#include <libavdevice/avdevice.h>
 import "C"
 import (
-	"../avcodec"
-	"../avutil"
 	"unsafe"
+
+	"github.com/peipeiguo/goav/avcodec"
+	"github.com/peipeiguo/goav/avutil"
 )
 
 type (
