@@ -10,7 +10,7 @@ import (
 	"reflect"
 	"unsafe"
 
-	"avutil"
+	"github.com/LeoKingLong/goav/avutil"
 )
 
 func (ctxt *Context) Chapters() **AvChapter {

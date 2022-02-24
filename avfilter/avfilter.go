@@ -15,8 +15,9 @@ package avfilter
 */
 import "C"
 import (
-	"avcodec"
 	"unsafe"
+
+	"github.com/LeoKingLong/goav/avcodec"
 )
 
 type (
