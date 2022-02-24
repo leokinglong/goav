@@ -19,8 +19,8 @@ package avformat
 //#include <libavdevice/avdevice.h>
 import "C"
 import (
-	"mixstream/utils/ffmpeg/avcodec"
-	"mixstream/utils/ffmpeg/avutil"
+	"../avcodec"
+	"../avutil"
 	"unsafe"
 )
 
