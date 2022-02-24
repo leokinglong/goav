@@ -17,7 +17,7 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/peipeiguo/goav/avcodec"
+	"github.com/LeoKingLong/goav/avcodec"
 )
 
 type (

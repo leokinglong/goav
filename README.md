@@ -10,7 +10,7 @@ A comprehensive binding to the ffmpeg video/audio manipulation library.
 
 `````go
 
-import "github.com/peipeiguo/goav/avformat"
+import "github.com/LeoKingLong/goav/avformat"
 
 func main() {
 
@@ -70,7 +70,7 @@ export LD_LIBRARY_PATH=$HOME/ffmpeg/lib
 ``` 
 
 ``` 
-go get github.com/peipeiguo/goav
+go get github.com/LeoKingLong/goav
 
 ``` 
 
