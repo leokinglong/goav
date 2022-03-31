@@ -154,9 +154,9 @@ func AvcodecGetClass() *Class {
 }
 
 //Get the Class for Frame.
-func AvcodecGetFrameClass() *Class {
-	return (*Class)(C.avcodec_get_frame_class())
-}
+// func AvcodecGetFrameClass() *Class {
+// 	return (*Class)(C.avcodec_get_frame_class())
+// }
 
 //Get the Class for AvSubtitleRect.
 func AvcodecGetSubtitleRectClass() *Class {
