@@ -1,4 +1,4 @@
-module github.com/LeoKingLong/goav
+module github.com/leokinglong/goav
 
 go 1.16
 

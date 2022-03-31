@@ -3,11 +3,11 @@ package main
 import (
 	"log"
 
-	"github.com/LeoKingLong/goav/avdevice"
-	"github.com/LeoKingLong/goav/avfilter"
-	"github.com/LeoKingLong/goav/avutil"
-	"github.com/LeoKingLong/goav/swresample"
-	"github.com/LeoKingLong/goav/swscale"
+	"github.com/leokinglong/goav/avdevice"
+	"github.com/leokinglong/goav/avfilter"
+	"github.com/leokinglong/goav/avutil"
+	"github.com/leokinglong/goav/swresample"
+	"github.com/leokinglong/goav/swscale"
 )
 
 func main() {
