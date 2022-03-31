@@ -61,9 +61,9 @@ func AvCalloc(n int, s uintptr) unsafe.Pointer {
 	return C.av_calloc(C.size_t(n), C.size_t(s))
 }
 
-func AvMalloczArray(n, s uintptr) unsafe.Pointer {
-	return C.av_mallocz_array(C.size_t(n), C.size_t(s))
-}
+// func AvMalloczArray(n, s uintptr) unsafe.Pointer {
+// 	return C.av_mallocz_array(C.size_t(n), C.size_t(s))
+// }
 
 //Duplicate the string s.
 func AvStrdup(s string) string {
