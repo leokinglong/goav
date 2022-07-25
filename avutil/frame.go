@@ -264,9 +264,14 @@ func (f *Frame) AvFrameSetFormat(format int) {
 	f.format = C.int(format)
 }
 
+func (f *Frame) SampleRate() int {
+	return int(f.sample_rate)
+}
+
 func (f *Frame) AvFrameSetSampleRate(sampleRate int) {
 	f.sample_rate = (C.int)(sampleRate)
 }
+
 func AvFrameGetChannelData(f *Frame, ch int) *uint8 {
 	return (*uint8)(f.data[ch])
 }
@@ -315,14 +320,6 @@ func (f *Frame) SetPts(pts int64) {
 	f.pts = C.int64_t(pts)
 }
 
-//func (f *Frame) PktPts() int64 {
-//	return int64(f.pkt_pts)
-//}
-
-//func (f *Frame) SetPktPts(pktPts int64) {
-//	f.pkt_pts = C.int64_t(pktPts)
-//}
-
 func (f *Frame) PktDts() int64 {
 	return int64(f.pkt_dts)
 }
@@ -347,8 +344,24 @@ func (f *Frame) AvFrameGetData() *unsafe.Pointer {
 	return (*unsafe.Pointer)(unsafe.Pointer(&f.data))
 }
 
+func (f *Frame) KeyFrame() int {
+	return int(f.key_frame)
+}
+
+func (f *Frame) PictureType() int {
+	return int(f.pict_type)
+}
+
 func (f *Frame) AvSetPictureType(pt int) {
 	f.pict_type = (C.enum_AVPictureType)(C.int(pt))
+}
+
+func (f *Frame) CodedPictureNumber() int {
+	return int(f.coded_picture_number)
+}
+
+func (f *Frame) DisplayPictureNumber() int {
+	return int(f.display_picture_number)
 }
 
 func (f *Frame) AvSetWidth(width int) {
